@@ -1,0 +1,52 @@
+﻿<Window x:Class="DinamicStructWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Работа со структурами данных" Height="800" Width="800">
+    <Grid Margin="10">
+        <StackPanel>
+            <!-- Выпадающее меню для выбора структуры данных -->
+            <ComboBox Name="DataStructureSelector" Width="300" Margin="5" SelectionChanged="DataStructureSelector_SelectionChanged">
+                <ComboBoxItem Content="Стек" IsSelected="True"/>
+                <ComboBoxItem Content="Очередь"/>
+                <ComboBoxItem Content="Постфиксная запись"/>
+                <ComboBoxItem Content="Пользовательский связный список"/>
+            </ComboBox>
+
+            <!-- Секция для работы со стеком -->
+            <StackPanel Name="StackPanel" Visibility="Visible">
+                <TextBlock Text="Работа со стеком" FontWeight="Bold" Margin="5"/>
+                <TextBox Name="StackInputTextBox" Width="400" Margin="5" Text="Введите команды (например, 1,56 2 5)"/>
+                <Button Name="ProcessStackButton" Content="Обработать команды" Width="200" Margin="5" Click="ProcessStackButton_Click"/>
+                <TextBlock Name="StackOutputTextBlock" TextWrapping="Wrap" Margin="5" Height="150" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+            </StackPanel>
+
+            <!-- Секция для работы с очередью -->
+            <StackPanel Name="QueuePanel" Visibility="Collapsed">
+                <TextBlock Text="Работа с очередью" FontWeight="Bold" Margin="5"/>
+                <TextBox Name="QueueInputTextBox" Width="400" Margin="5" Text="Введите команды (например, 1,56 2 5)"/>
+                <Button Name="ProcessQueueButton" Content="Обработать команды" Width="200" Margin="5" Click="ProcessQueueButton_Click"/>
+                <TextBlock Name="QueueOutputTextBlock" TextWrapping="Wrap" Margin="5" Height="150" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+            </StackPanel>
+
+            <!-- Секция для работы с постфиксной записью -->
+            <StackPanel Name="PostfixPanel" Visibility="Collapsed">
+                <TextBlock Text="Вычисление постфиксного выражения" FontWeight="Bold" Margin="5"/>
+                <TextBox Name="PostfixInputTextBox" Width="400" Margin="5" Text="Введите постфиксное выражение (например, 3 4 +)"/>
+                <Button Name="EvaluatePostfixButton" Content="Вычислить выражение" Width="200" Margin="5" Click="EvaluatePostfixButton_Click"/>
+                <TextBlock Name="PostfixOutputTextBlock" TextWrapping="Wrap" Margin="5" Height="150" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+            </StackPanel>
+
+            <!-- Секция для работы с пользовательским связным списком -->
+            <StackPanel Name="CustomLinkedListPanel" Visibility="Collapsed">
+                <TextBlock Text="Работа с пользовательским связным списком" FontWeight="Bold" Margin="5"/>
+                <TextBox Name="CustomLinkedListInputTextBox" Width="400" Margin="5" Text="Введите значение" Foreground="Gray"
+         GotFocus="CustomLinkedListInputTextBox_GotFocus" LostFocus="CustomLinkedListInputTextBox_LostFocus"/>
+                <Button Name="AddToCustomListButton" Content="Добавить в список" Width="200" Margin="5" Click="AddToCustomListButton_Click"/>
+                <Button Name="ReverseCustomListButton" Content="Перевернуть список" Width="200" Margin="5" Click="ReverseCustomListButton_Click"/>
+                <Button Name="MoveLastToFirstButton" Content="Переместить последний в начало" Width="250" Margin="5" Click="MoveLastToFirstButton_Click"/>
+                <Button Name="MoveFirstToLastButton" Content="Переместить первый в конец" Width="250" Margin="5" Click="MoveFirstToLastButton_Click"/>
+                <TextBlock Name="CustomLinkedListOutputTextBlock" TextWrapping="Wrap" Margin="5" Height="200" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

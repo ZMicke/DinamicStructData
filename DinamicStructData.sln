@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DinamicStructData", "DinamicStructData\DinamicStructData.csproj", "{98CCD9F7-67D0-450A-9E6E-6E9CFD7AF56D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DinamicStructConsole", "DinamicStructConsole\DinamicStructConsole.csproj", "{567157C9-BDF7-40DD-BFBC-457BB375323C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98CCD9F7-67D0-450A-9E6E-6E9CFD7AF56D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98CCD9F7-67D0-450A-9E6E-6E9CFD7AF56D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98CCD9F7-67D0-450A-9E6E-6E9CFD7AF56D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98CCD9F7-67D0-450A-9E6E-6E9CFD7AF56D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{567157C9-BDF7-40DD-BFBC-457BB375323C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{567157C9-BDF7-40DD-BFBC-457BB375323C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{567157C9-BDF7-40DD-BFBC-457BB375323C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{567157C9-BDF7-40DD-BFBC-457BB375323C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7FBBC9F4-C57F-476E-9D2E-2D5D00531951}
+	EndGlobalSection
+EndGlobal

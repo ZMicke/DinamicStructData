@@ -1,0 +1,28 @@
+C:\Users\User\source\repos\DinamicStructData\DinamicStructConsole\bin\Debug\net8.0\DinamicStructConsole.exe
+C:\Users\User\source\repos\DinamicStructData\DinamicStructConsole\bin\Debug\net8.0\DinamicStructConsole.deps.json
+C:\Users\User\source\repos\DinamicStructData\DinamicStructConsole\bin\Debug\net8.0\DinamicStructConsole.runtimeconfig.json
+C:\Users\User\source\repos\DinamicStructData\DinamicStructConsole\bin\Debug\net8.0\DinamicStructConsole.dll
+C:\Users\User\source\repos\DinamicStructData\DinamicStructConsole\bin\Debug\net8.0\DinamicStructConsole.pdb
+C:\Users\User\source\repos\DinamicStructData\DinamicStructConsole\obj\Debug\net8.0\DinamicStructConsole.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\DinamicStructData\DinamicStructConsole\obj\Debug\net8.0\DinamicStructConsole.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\DinamicStructData\DinamicStructConsole\obj\Debug\net8.0\DinamicStructConsole.AssemblyInfo.cs
+C:\Users\User\source\repos\DinamicStructData\DinamicStructConsole\obj\Debug\net8.0\DinamicStructConsole.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\DinamicStructData\DinamicStructConsole\obj\Debug\net8.0\DinamicStructConsole.dll
+C:\Users\User\source\repos\DinamicStructData\DinamicStructConsole\obj\Debug\net8.0\refint\DinamicStructConsole.dll
+C:\Users\User\source\repos\DinamicStructData\DinamicStructConsole\obj\Debug\net8.0\DinamicStructConsole.pdb
+C:\Users\User\source\repos\DinamicStructData\DinamicStructConsole\obj\Debug\net8.0\DinamicStructConsole.genruntimeconfig.cache
+C:\Users\User\source\repos\DinamicStructData\DinamicStructConsole\obj\Debug\net8.0\ref\DinamicStructConsole.dll
+C:\Users\User\Desktop\IIT\2 curse\Алгоритмы\DinamicStructData\DinamicStructConsole\bin\Debug\net8.0\DinamicStructConsole.exe
+C:\Users\User\Desktop\IIT\2 curse\Алгоритмы\DinamicStructData\DinamicStructConsole\bin\Debug\net8.0\DinamicStructConsole.deps.json
+C:\Users\User\Desktop\IIT\2 curse\Алгоритмы\DinamicStructData\DinamicStructConsole\bin\Debug\net8.0\DinamicStructConsole.runtimeconfig.json
+C:\Users\User\Desktop\IIT\2 curse\Алгоритмы\DinamicStructData\DinamicStructConsole\bin\Debug\net8.0\DinamicStructConsole.dll
+C:\Users\User\Desktop\IIT\2 curse\Алгоритмы\DinamicStructData\DinamicStructConsole\bin\Debug\net8.0\DinamicStructConsole.pdb
+C:\Users\User\Desktop\IIT\2 curse\Алгоритмы\DinamicStructData\DinamicStructConsole\obj\Debug\net8.0\DinamicStructConsole.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\IIT\2 curse\Алгоритмы\DinamicStructData\DinamicStructConsole\obj\Debug\net8.0\DinamicStructConsole.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\IIT\2 curse\Алгоритмы\DinamicStructData\DinamicStructConsole\obj\Debug\net8.0\DinamicStructConsole.AssemblyInfo.cs
+C:\Users\User\Desktop\IIT\2 curse\Алгоритмы\DinamicStructData\DinamicStructConsole\obj\Debug\net8.0\DinamicStructConsole.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\IIT\2 curse\Алгоритмы\DinamicStructData\DinamicStructConsole\obj\Debug\net8.0\DinamicStructConsole.dll
+C:\Users\User\Desktop\IIT\2 curse\Алгоритмы\DinamicStructData\DinamicStructConsole\obj\Debug\net8.0\refint\DinamicStructConsole.dll
+C:\Users\User\Desktop\IIT\2 curse\Алгоритмы\DinamicStructData\DinamicStructConsole\obj\Debug\net8.0\DinamicStructConsole.pdb
+C:\Users\User\Desktop\IIT\2 curse\Алгоритмы\DinamicStructData\DinamicStructConsole\obj\Debug\net8.0\DinamicStructConsole.genruntimeconfig.cache
+C:\Users\User\Desktop\IIT\2 curse\Алгоритмы\DinamicStructData\DinamicStructConsole\obj\Debug\net8.0\ref\DinamicStructConsole.dll
