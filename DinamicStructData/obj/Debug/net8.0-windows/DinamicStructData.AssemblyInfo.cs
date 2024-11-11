@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DinamicStructData")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c1e8cb5252cbf2bc1a6e18dab96d7df35756b17a")]
 [assembly: System.Reflection.AssemblyProductAttribute("DinamicStructData")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DinamicStructData")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -37,3 +37,4 @@ C:\Users\User\Desktop\IIT\2 curse\Алгоритмы\DinamicStructData\DinamicSt
 C:\Users\User\Desktop\IIT\2 curse\Алгоритмы\DinamicStructData\DinamicStructData\bin\Debug\net8.0-windows\DinamicStructData.pdb
 C:\Users\User\Desktop\IIT\2 curse\Алгоритмы\DinamicStructData\DinamicStructData\obj\Debug\net8.0-windows\DinamicStructData.genruntimeconfig.cache
 C:\Users\User\Desktop\IIT\2 curse\Алгоритмы\DinamicStructData\DinamicStructData\obj\Debug\net8.0-windows\ref\DinamicStructData.dll
+C:\Users\User\Desktop\IIT\2 curse\Алгоритмы\DinamicStructData\DinamicStructData\obj\Debug\net8.0-windows\DinamicStructData.sourcelink.json

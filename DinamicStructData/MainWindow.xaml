@@ -37,14 +37,25 @@
             </StackPanel>
 
             <!-- Секция для работы с пользовательским связным списком -->
+            <!-- Секция для работы с пользовательским связным списком -->
             <StackPanel Name="CustomLinkedListPanel" Visibility="Collapsed">
                 <TextBlock Text="Работа с пользовательским связным списком" FontWeight="Bold" Margin="5"/>
                 <TextBox Name="CustomLinkedListInputTextBox" Width="400" Margin="5" Text="Введите значение" Foreground="Gray"
-         GotFocus="CustomLinkedListInputTextBox_GotFocus" LostFocus="CustomLinkedListInputTextBox_LostFocus"/>
+                         GotFocus="CustomLinkedListInputTextBox_GotFocus" LostFocus="CustomLinkedListInputTextBox_LostFocus"/>
                 <Button Name="AddToCustomListButton" Content="Добавить в список" Width="200" Margin="5" Click="AddToCustomListButton_Click"/>
                 <Button Name="ReverseCustomListButton" Content="Перевернуть список" Width="200" Margin="5" Click="ReverseCustomListButton_Click"/>
                 <Button Name="MoveLastToFirstButton" Content="Переместить последний в начало" Width="250" Margin="5" Click="MoveLastToFirstButton_Click"/>
                 <Button Name="MoveFirstToLastButton" Content="Переместить первый в конец" Width="250" Margin="5" Click="MoveFirstToLastButton_Click"/>
+                <Button Name="CountDistinctButton" Content="Подсчитать уникальные элементы" Width="250" Margin="5" Click="CountDistinctButton_Click"/>
+                <Button Name="RemoveNonUniqueButton" Content="Удалить неуникальные элементы" Width="250" Margin="5" Click="RemoveNonUniqueButton_Click"/>
+                <Button Name="InsertListButton" Content="Вставить список после значения" Width="250" Margin="5" Click="InsertListButton_Click"/>
+                <Button Name="InsertSortedButton" Content="Вставить элемент в упорядоченный список" Width="250" Margin="5" Click="InsertSortedButton_Click"/>
+                <Button Name="RemoveAllOccurrencesButton" Content="Удалить все вхождения значения" Width="250" Margin="5" Click="RemoveAllOccurrencesButton_Click"/>
+                <Button Name="InsertBeforeButton" Content="Вставить перед значением" Width="250" Margin="5" Click="InsertBeforeButton_Click"/>
+                <Button Name="AppendListButton" Content="Дописать список" Width="250" Margin="5" Click="AppendListButton_Click"/>
+                <Button Name="SplitListButton" Content="Разделить список" Width="250" Margin="5" Click="SplitListButton_Click"/>
+                <Button Name="DoubleListButton" Content="Удвоить список" Width="250" Margin="5" Click="DoubleListButton_Click"/>
+                <Button Name="SwapElementsButton" Content="Поменять элементы местами" Width="250" Margin="5" Click="SwapElementsButton_Click"/>
                 <TextBlock Name="CustomLinkedListOutputTextBlock" TextWrapping="Wrap" Margin="5" Height="200" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
             </StackPanel>
         </StackPanel>

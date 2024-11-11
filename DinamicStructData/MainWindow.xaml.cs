@@ -10,13 +10,13 @@ namespace DinamicStructWPF
     {
         private NodeAndStack.Stack<string> stack = new NodeAndStack.Stack<string>(); // Инициализация стека
         private QueueHandler queueHandler; // Обработчик очереди
-        private CustomLinkedList<int> customList;
+        private CustomLinkedList<int> additionalList;
 
         public MainWindow()
         {
             InitializeComponent(); // Обязательно вызываем инициализацию компонентов
             queueHandler = new QueueHandler(); // Инициализация обработчика очереди
-            customList = new CustomLinkedList<int>();
+            additionalList = new CustomLinkedList<int>();
         }
         private void CustomLinkedListInputTextBox_GotFocus(object sender, RoutedEventArgs e)
         {
@@ -66,15 +66,136 @@ namespace DinamicStructWPF
                     break;
             }
         }
+        // Count distinct elements
+        private void CountDistinctButton_Click(object sender, RoutedEventArgs e)
+        {
+            int count = additionalList.CountDistinct();
+            CustomLinkedListOutputTextBlock.Text += $"Количество уникальных элементов: {count}\n";
+        }
+        // Remove non-unique elements
+        private void RemoveNonUniqueButton_Click(object sender, RoutedEventArgs e)
+        {
+            additionalList.RemoveNonUnique();
+            CustomLinkedListOutputTextBlock.Text += "Неуникальные элементы удалены.\n";
+            additionalList.PrintList(CustomLinkedListOutputTextBlock);
+        }
+        // Insert another list after the first occurrence of a value
+        private void InsertListButton_Click(object sender, RoutedEventArgs e)
+        {
+            // Add example elements to the additional list
+            additionalList.AddToFront(99);
+            additionalList.AddToFront(98);
+
+            if (int.TryParse(CustomLinkedListInputTextBox.Text, out int value))
+            {
+                additionalList.InsertListAfterFirstOccurrence(additionalList, value);
+                CustomLinkedListOutputTextBlock.Text += $"Список вставлен после первого вхождения {value}.\n";
+                additionalList.PrintList(CustomLinkedListOutputTextBlock);
+            }
+            else
+            {
+                CustomLinkedListOutputTextBlock.Text += "Ошибка: Введите корректное число.\n";
+            }
+        }
+        // Insert an element in a sorted list
+        private void InsertSortedButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (int.TryParse(CustomLinkedListInputTextBox.Text, out int value))
+            {
+                additionalList.InsertSorted(value);
+                CustomLinkedListOutputTextBlock.Text += $"Элемент {value} вставлен в упорядоченный список.\n";
+                additionalList.PrintList(CustomLinkedListOutputTextBlock);
+            }
+            else
+            {
+                CustomLinkedListOutputTextBlock.Text += "Ошибка: Введите корректное число.\n";
+            }
+        }
+        // Remove all occurrences of a value
+        private void RemoveAllOccurrencesButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (int.TryParse(CustomLinkedListInputTextBox.Text, out int value))
+            {
+                additionalList.RemoveAll(value);
+                CustomLinkedListOutputTextBlock.Text += $"Все вхождения {value} удалены.\n";
+                additionalList.PrintList(CustomLinkedListOutputTextBlock);
+            }
+            else
+            {
+                CustomLinkedListOutputTextBlock.Text += "Ошибка: Введите корректное число.\n";
+            }
+        }
+        // Insert a value before the first occurrence of another value
+        private void InsertBeforeButton_Click(object sender, RoutedEventArgs e)
+        {
+            // Example values for insertion
+            int newValue = 100; // New value to insert
+            if (int.TryParse(CustomLinkedListInputTextBox.Text, out int existingValue))
+            {
+                additionalList.InsertBefore(newValue, existingValue);
+                CustomLinkedListOutputTextBlock.Text += $"Значение {newValue} вставлено перед первым вхождением {existingValue}.\n";
+                additionalList.PrintList(CustomLinkedListOutputTextBlock);
+            }
+            else
+            {
+                CustomLinkedListOutputTextBlock.Text += "Ошибка: Введите корректное число.\n";
+            }
+        }
+        // Append another list to the custom list
+        private void AppendListButton_Click(object sender, RoutedEventArgs e)
+        {
+            // Add example elements to the additional list
+            additionalList.AddToFront(50);
+            additionalList.AddToFront(60);
+
+            additionalList.AppendList(additionalList);
+            CustomLinkedListOutputTextBlock.Text += "Список дописан.\n";
+            additionalList.PrintList(CustomLinkedListOutputTextBlock);
+        }
+        // Split the list into two by the first occurrence of a value
+        private void SplitListButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (int.TryParse(CustomLinkedListInputTextBox.Text, out int value))
+            {
+                additionalList.SplitByFirstOccurrence(value, out CustomLinkedList<int> list1, out CustomLinkedList<int> list2);
+                CustomLinkedListOutputTextBlock.Text += $"Список разделен по первому вхождению {value}.\n";
+                CustomLinkedListOutputTextBlock.Text += "Первая часть:\n";
+                list1.PrintList(CustomLinkedListOutputTextBlock);
+                CustomLinkedListOutputTextBlock.Text += "Вторая часть:\n";
+                list2.PrintList(CustomLinkedListOutputTextBlock);
+            }
+            else
+            {
+                CustomLinkedListOutputTextBlock.Text += "Ошибка: Введите корректное число.\n";
+            }
+        }
+        // Double the list
+        private void DoubleListButton_Click(object sender, RoutedEventArgs e)
+        {
+            additionalList.DoubleList();
+            CustomLinkedListOutputTextBlock.Text += "Список удвоен.\n";
+            additionalList.PrintList(CustomLinkedListOutputTextBlock);
+        }
+        // Swap two elements
+        private void SwapElementsButton_Click(object sender, RoutedEventArgs e)
+        {
+            // Example values for swapping
+            int elem1 = 10;
+            int elem2 = 20;
+
+            additionalList.SwapElements(elem1, elem2);
+            CustomLinkedListOutputTextBlock.Text += $"Элементы {elem1} и {elem2} поменяны местами.\n";
+            additionalList.PrintList(CustomLinkedListOutputTextBlock);
+        }
 
         // Event handler for adding an element to the custom linked list
         private void AddToCustomListButton_Click(object sender, RoutedEventArgs e)
         {
             if (int.TryParse(CustomLinkedListInputTextBox.Text, out int value))
             {
-                customList.AddToFront(value);
+                additionalList.AddToFront(value);
                 CustomLinkedListOutputTextBlock.Text += $"Добавлено: {value}\n";
-                customList.PrintList(CustomLinkedListOutputTextBlock);
+                additionalList.PrintList(CustomLinkedListOutputTextBlock);
             }
             else
             {
@@ -85,25 +206,25 @@ namespace DinamicStructWPF
         // Event handler for reversing the custom linked list
         private void ReverseCustomListButton_Click(object sender, RoutedEventArgs e)
         {
-            customList.Reverse();
+            additionalList.Reverse();
             CustomLinkedListOutputTextBlock.Text += "Список перевернут.\n";
-            customList.PrintList(CustomLinkedListOutputTextBlock);
+            additionalList.PrintList(CustomLinkedListOutputTextBlock);
         }
 
         // Event handler for moving the last element to the front
         private void MoveLastToFirstButton_Click(object sender, RoutedEventArgs e)
         {
-            customList.MoveLastToFirst();
+            additionalList.MoveLastToFirst();
             CustomLinkedListOutputTextBlock.Text += "Последний элемент перемещен в начало.\n";
-            customList.PrintList(CustomLinkedListOutputTextBlock);
+            additionalList.PrintList(CustomLinkedListOutputTextBlock);
         }
 
         // Event handler for moving the first element to the end
         private void MoveFirstToLastButton_Click(object sender, RoutedEventArgs e)
         {
-            customList.MoveFirstToLast();
+            additionalList.MoveFirstToLast();
             CustomLinkedListOutputTextBlock.Text += "Первый элемент перемещен в конец.\n";
-            customList.PrintList(CustomLinkedListOutputTextBlock);
+            additionalList.PrintList(CustomLinkedListOutputTextBlock);
         }
 
 
